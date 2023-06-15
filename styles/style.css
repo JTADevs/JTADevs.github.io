@@ -1,0 +1,55 @@
+html{
+    height: 100%;
+    display: block;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: blue;
+    display: grid;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+}
+
+#title{
+    text-align: center;
+}
+
+#letters {
+    display: flex;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: auto;
+}
+.letters {
+    display: inline-block;
+    font-size: 80px;
+    transform: scale(1);
+    transition: transform .5s;
+    cursor: pointer;
+}
+.letters:hover {
+    transform: scale(1.5);
+}
+
+#descriptions{
+    position: relative;
+    width: 100%;
+}
+.desc{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(127, 98, 255, 0.314);
+    transform: scale(0);
+    transform-origin: top center;
+    transition: transform .5s;
+}
+
+.active{
+    transform: scale(1);
+}
